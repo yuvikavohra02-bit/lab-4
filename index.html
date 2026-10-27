@@ -3,9 +3,57 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title> Pick Your Day</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script> 
 </head>
 <body>
 
+<header>
+	<p> YOUR PERSONAL DAILY GUIDE </p>
+	<h1> Pick Your Day</h1>
+	<p> A little clarity can change your whole day. </p>
+</header>
+
+<main> 
+<section class="panel">
+	<h2>01. How are you feeling?</h2>
+	<div class="options" id="moodOptions">
+        <button data-value="happy"> Happy</button>
+        <button data-value="stressed">Stressed</button>
+        <button data-value="tired"> Tired</button>
+        <button data-value="bored"> Bored</button>
+      </div>
+
+<h2> 02. What's your energy level? </h2>
+<div class="options" id= "energyOptions">
+	<button data-value= "high"> High </button>
+	<button data-value= "medium"> Medium </button>
+	<button data-value= "low"> Low </button>
+</div>
+<h2>03. How much time do you have?</h2>
+<div class="options" id="timeOptions"> 
+	<button data-value= "15"> 15 minutes </button>
+	<button data-value= "30"> 30 minutes</button>
+	<button data-value= "60"> 1 hour+ </button>
+</div>
+<button class="primary" id="decide">
+	Find my activity 
+</button>
+</section>
+<section
+class ="panel result" id="result"
+aria-lives="polite" hidden> 
+<p id="resultLabel"> YOUR PERSONALIZED PLAN</p>
+<h2 id="resultTitle"></h2>
+<p id="redultDescription"></p>
+<p id="redultTip"></p>
+<button id="reset">Start Again</button>
+</section>
+</main>
+<footer> 
+	Made for days that need a little direcion. 
+</footer>
 </body>
+
 </html>
